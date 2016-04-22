@@ -1,2 +1,2 @@
-# http://swoldanski.github.io
-my CV
+# my CV
+http://swoldanski.github.io
