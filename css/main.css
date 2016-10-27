@@ -173,10 +173,9 @@ blockquote {
     font-style: italic;
 }
 
-
-
-
-
+.photo {
+    max-width: 120px; 
+}
 
 
 
@@ -218,6 +217,9 @@ blockquote {
     .oldie nav a {
         margin: 0 0.7%;
     }
+
+
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -265,9 +267,6 @@ blockquote {
         padding: 2%;
     }
 
-    .col.left {
-        
-    }
 }
 
 @media only screen and (min-width: 1140px) {
@@ -279,6 +278,13 @@ blockquote {
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
+    }
+
+/* ========================
+    INTERMEDIATE: Photo
+======================== */
+    .photo {
+        max-width: 50%; 
     }
 }
 
@@ -391,5 +397,10 @@ blockquote {
     h2,
     h3 {
         page-break-after: avoid;
+    }
+
+    .col {
+        width: 90%;
+        padding: 5%;
     }
 }
