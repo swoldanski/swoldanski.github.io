@@ -348,6 +348,8 @@ blockquote {
         color: #000 !important;
         box-shadow: none !important;
         text-shadow: none !important;
+        font-size: 13px;
+        line-height: 1.5;
     }
 
     a,
