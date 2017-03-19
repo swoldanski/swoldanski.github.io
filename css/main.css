@@ -177,8 +177,11 @@ blockquote {
     max-width: 120px; 
 }
 
-
-
+.glider {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
 
 /* ==========================================================================
    Media Queries
