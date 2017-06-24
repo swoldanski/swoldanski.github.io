@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  web:
+    image: swoldanski/cv:${TAG:-latest}
+    build: .
+    ports:
+      - 80:80
