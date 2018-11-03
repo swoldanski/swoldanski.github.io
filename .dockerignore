@@ -3,3 +3,4 @@
 docker-compose*
 Dockerfile*
 .env
+k8s/
