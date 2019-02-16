@@ -1,7 +1,34 @@
 # Who am I
 http://swoldanski.github.io
 
-## Docker workflow
+## Kubernetes workflow
+
+### Tools
+
+ - https://skaffold.dev
+ - https://helm.sh
+ - https://kubernetes.io cluster
+
+### Configuration
+
+You can overide default values using `helm-values.yaml` file or you can add new profiles to `skaffold.yaml` file.
+
+### Development and deployment
+
+Change your Kubernetes context to local cluster, for example `minikube` or `Docker for Desktop` and use 
+
+    skaffold dev 
+
+to start your project in development mode.
+
+Preview of the project should be available at http://127.0.0.1
+
+Any change to files will be reflected in your cluster after a short build => deploy cycle.
+
+When you are ready, you can deploy your project with `skaffold run` but remember to switch to your staging/production Kubernetes cluster.
+
+
+## Docker workflow (_deprecated_)
 
 ### Configuration
 You can use environment variables to control how to build and run this project:
