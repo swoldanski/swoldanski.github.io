@@ -1,0 +1,25 @@
+apiVersion: skaffold/v1beta5
+kind: Config
+build:
+  artifacts:
+  - image: swoldanski/cv
+deploy:
+  helm:
+    releases:
+    - name: swoldanski-cv
+      chartPath: k8s/swoldanski-cv
+      # namespace: production
+      #wait: true
+      valuesFiles:
+      - helm-values.yaml
+      values:
+        image: swoldanski/cv
+      #recreatePods will pass --recreate-pods to helm upgrade
+      #recreatePods: true
+      #overrides builds an override values.yaml file to run with the helm deploy
+      #overrides:
+      # some:
+      #   key: someValue
+      #setValues get appended to the helm deploy with --set.  
+      # setValues:
+        #some.key: someValue
