@@ -14,7 +14,7 @@ pipeline {
 
       }
       steps {
-        sh 'docker image ls'
+        sh 'ls -la'
       }
     }
 
