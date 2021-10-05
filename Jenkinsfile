@@ -1,13 +1,14 @@
 pipeline {
-  agent any
-  stages {
-    stage('Build docker images') {
-      steps {
-        def customImage = docker.build("my-image:${env.BUILD_ID}")
-
-    customImage.inside {
-        sh 'ls -la'
+  agent {
+    dockerfile {
+      filename 'Dockerfile'
     }
+
+  }
+  stages {
+    stage('List docker images') {
+      steps {
+        sh 'ls -la'
       }
     }
 
