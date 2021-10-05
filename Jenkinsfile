@@ -9,7 +9,7 @@ pipeline {
 
       }
       steps {
-        sh '''ls -la
+        sh '''ls -la;
 cat index.html'''
       }
     }
