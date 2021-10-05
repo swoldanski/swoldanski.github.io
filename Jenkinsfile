@@ -13,6 +13,7 @@ pipeline {
           steps {
             sh '''ls -la;
 cat index.html'''
+            echo 'Resume'
           }
         }
 
@@ -25,6 +26,7 @@ cat index.html'''
           }
           steps {
             sh 'mvn --version'
+            echo 'Backend'
           }
         }
 
@@ -37,6 +39,8 @@ cat index.html'''
           }
           steps {
             sh 'node --version'
+            echo 'Frontend'
+            pwd(tmp: true)
           }
         }
 
