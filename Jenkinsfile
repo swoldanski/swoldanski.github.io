@@ -6,10 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('Build') {
-      agent any
+    stage('List docker images') {
       steps {
-        sh 'docker build .'
+        sh 'docker image ls'
       }
     }
 
